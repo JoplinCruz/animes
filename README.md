@@ -1,4 +1,5 @@
 # Projeto Mundo Anime
+Projeto Imersão Dev com Google Gemini.
 
 ## Descrição
 
@@ -84,5 +85,5 @@ Este projeto está licenciado sob a licença MIT.
 
 ## Agradecimentos
 
-Agradeço à comunidade open source pelas diversas bibliotecas e ferramentas utilizadas neste projeto.
+Agradeço à @AluraOnline e ao @GoogleBrasil pela motivação e repasse de conhecimento nessa Imersão Dev com Google Gemini, em especial à Rafaella Ballerini - Instrutora front-end @Alura, Guilherme Lima - Tech Educator e Professor na Alura e na USP, e Luciano Martins - Developer Advocate, Google IA. À comunidade open source pelas diversas bibliotecas e ferramentas e por todo o trabalho para o desenvolvimento de um mundo livre.
 
