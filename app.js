@@ -67,8 +67,8 @@ class Animes {
             // Registrar os licencciadores
             let autor = "";
             // Verifica se existe conteúdo
-            if (jikan.producers.length != 0) {
-                autor = jikan.licencers[0].name;
+            if (jikan.licensors.length != 0) {
+                autor = jikan.licensors[0].name;
             }
 
             // Registra a produtora do anime
