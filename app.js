@@ -322,7 +322,7 @@ class Principal {
         // Converte todas as letras em caixa baixa
         this.minhaBusca = palavraChave.toLowerCase();
         // Inicializa a busca
-        this.animes.buscarAnimeAPI(this.minhaBusca);
+        this.animes.buscarAnime(this.minhaBusca);
     }
 }
 
