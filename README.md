@@ -57,8 +57,7 @@ Principal:
 
 ## Deploy
 
-* https://animes-psi.vercel.app/ - versão arquivo local.
-* https://animes-api.vercel.app/ - versão API Jikan
+* https://animes-psi.vercel.app/
 
 ## Contribuições
 
