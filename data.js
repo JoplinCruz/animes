@@ -106,7 +106,7 @@ const animes = [
         estudio: "Gainax",
         genero: ["mecha", "psicológico", "sci-fi"],
         status: "finalizado",
-        cpersonagens: [
+        personagens: [
             { name: "Shinji Ikari", description: "Um adolescente introvertido que é recrutado para pilotar um Eva." },
             { name: "Rei Ayanami", description: "Uma piloto misteriosa e enigmática." }
         ],
