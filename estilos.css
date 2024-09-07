@@ -37,12 +37,20 @@ body {
     /* Imagem sem repetição */
 }
 
+.sala-espera {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
 /* Estiliza os títulos h1 */
 
 .titulo {
     width: 24rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    background: linear-gradient(#d0d0d030, #d0d0d0d0);
+    background: linear-gradient(#d0d0d030, #ffffff8e);
     backdrop-filter: blur(.3rem);
 }
 
@@ -68,7 +76,7 @@ section {
     /* Alinha os itens na vertical */
     align-items: center;
     /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     /* Espaçamento abaixo de cada seção */
 }
 
@@ -131,11 +139,11 @@ section button:hover {
 .resultados-pesquisa {
     width: 60rem;
     /* Largura máxima da caixa de resultados */
-    height: 46vh;
+    height: 48vh;
     /* Altura máxima da caixa de resultados */
     overflow-y: auto;
     /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     /* Espaçamento acima da caixa de resultados */
     padding: 1rem;
     /* Espaçamento interno */
