@@ -32,8 +32,37 @@ class Animes {
         let animesCriterios = this.filtrar(animes);
 
         // declara a variável pesquisa com o resultado da busca dos títulos e das sinopses
-        const pesquisa = animesCriterios.filter(anime => anime.titulo.toLowerCase().includes(minhaBusca) || anime.sinopse.toLowerCase().includes(this.minhaBusca));
+        // const pesquisa = animesCriterios.filter(anime => anime.titulo.toLowerCase().includes(minhaBusca) || anime.sinopse.toLowerCase().includes(this.minhaBusca));
 
+        // com a busca pela função filter houve limitação ao pesquisa numa lista dentro da lista original
+        // A função foi decompilada para incluir a busca dentro da array personagens existente em cada lista
+        // inicia variável pesquisa onde serão armazenados os resultados da busca
+        var pesquisa = [];
+        // Itera a lista previamente filtrada na variável anime
+        animesCriterios.forEach(anime => {
+
+            // Inicializa a variável indicadora
+            let found = false;
+            // Sempre que houver ocorrência verdadeira na comparação dos termos ele é atribuída o valor true
+            if (anime.titulo.toLowerCase().includes(this.minhaBusca) || anime.sinopse.toLowerCase().includes(this.minhaBusca)) {
+                found = true;
+            }
+
+            // prepera a variável persongens para a iteração com a variável personagem ( singular )
+            let personagens = anime.personagens;
+            personagens.forEach(personagem => {
+                // Verifica se houve ocorrência verdadeira entre os termos atribuíndo o valor true à variável found
+                if (personagem.name.toLowerCase().includes(this.minhaBusca) || personagem.description.toLowerCase().includes(this.minhaBusca)) {
+                    found = true;
+                }
+            });
+
+            // Verifica a condição da variável found, em sendo true acrescenta os dados da busca contidos em anime dentro da variável pesquisa
+            if (found) {
+                pesquisa.push(anime);
+            }
+        });
+        
         // Vereifica se a pesquisa é válida
         if (pesquisa.length) {
             // Encaminha os dados válidos
